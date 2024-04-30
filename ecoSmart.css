@@ -1,0 +1,779 @@
+:root {
+  --button-color: #2E32D1;
+   --link-color: #63638A;
+}
+
+* {
+	transition: all .3s ease-out;
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Satoshi', sans-serif;
+	font-size: 18px;
+	background-color: #F7F7F6;
+	padding-top: 40px;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+p {
+  margin: 0;
+}
+
+.button {
+  background-color: var(--button-color);
+  padding: 17px 32px;
+  color: #FFF;
+  border-radius: 4px;
+  border: none;
+  font-weight: 500;
+}
+
+.container-h {
+  max-width: 1220px;
+  margin: 0 auto;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.menu {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+}
+
+.menu li + li {
+	margin-left: 32px;
+}
+
+.menu li a {
+	text-decoration: none;
+	color: var(--link-color);
+
+}
+
+.menu li a:hover {
+	color: var(--button-color);
+}
+
+.menu-btn {
+	padding: 4px 8px;
+	align-items: center;
+	font-size: 18px;
+	border: 1px solid #0C0D34;
+	background-color: transparent;
+	position: fixed;
+	right: 12px;
+	top: 20px;
+	display: none;
+}
+
+.menu-btn:hover {
+	background-color: #0C0D34;
+	color: #fafafa;
+	cursor: pointer;
+}
+
+@media (max-width: 992px) {
+	.menu {
+		display: none;
+	}
+
+	.menu-btn { display: inline-flex; }
+}
+
+.hero-unit {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  gap: 72px;
+  margin-top: 88px;
+}
+
+.hero-unit .text {
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-unit .text h1 {
+  font-size: 32px;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 24px;
+  margin-top: 0;
+}
+
+.hero-unit .text p {
+  color: var(--link-color);
+}
+
+.hero-unit .button {
+  margin-top: 32px;
+}
+
+@media (min-width: 560px) {
+  .hero-unit {
+    flex-direction: column;
+    margin-top: 104px;
+  }
+
+  .hero-unit .text h1 {
+    font-size: 56px;
+    margin-bottom: 32px;
+  }
+
+  .hero-unit .button {
+    margin-top: 40px;
+  }
+}
+
+
+/* Якщо розмір екрану перевищує 992 пікселів */
+@media screen and (min-width: 992px) {
+  .frame {
+    display: none;
+  }
+  
+  .ellipse {
+    display: none;
+}
+}
+
+/* Якщо розмір екрану складає 992 пікселів в ширину або менше */
+@media screen and (max-width: 992px) {
+  .frame {
+    border-radius: 31.3px;
+    border: 1.3px solid #0C0D34;
+    position: relative;
+    margin: 0 0 0 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-self: center;
+    padding: 5.1px 3.9px 18.4px 3.9px;
+    width: 15.7px;
+    height: 31.3px;
+    box-sizing: border-box;
+  }
+  
+  .ellipse {
+    border-radius: 3.9px;
+    background: #0C0D34;
+    width: 7.8px;
+    height: 7.8px;
+  }
+}
+
+
+
+
+
+
+
+
+
+.eco-smart .title {
+  margin-bottom: 59px;
+  display: inline-block;
+  overflow-wrap: break-word;
+  font-family: 'Satoshi', 'Roboto Condensed';
+  font-weight: 500;
+  font-size: 48px;
+  color: #0C0D34;
+}
+.eco-smart .vector {
+  width: 15px;
+  height: 24px;
+}
+.eco-smart .bilightning-fill {
+  border-radius: 4px;
+  background: #0C0D36;
+  margin-bottom: 32px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-self: flex-start;
+  padding: 12px 16.5px;
+  width: 48px;
+  height: 48px;
+  box-sizing: border-box;
+}
+.eco-smart .headline-1 {
+  margin-bottom: 9px;
+  display: inline-block;
+  align-self: flex-start;
+  overflow-wrap: break-word;
+  font-family: 'Satoshi', 'Roboto Condensed';
+  font-weight: 500;
+  font-size: 32px;
+  color: #0C0D34;
+}
+.eco-smart .body-1 {
+  overflow-wrap: break-word;
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 18px;
+  color: #63638A;
+}
+.eco-smart .text-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: flex-start;
+  width: fit-content;
+  box-sizing: border-box;
+}
+.eco-smart .benefit {
+  border-radius: 8px;
+  background: #FAFAF6;
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  padding: 24px 0 0 24px;
+  width: fit-content;
+  box-sizing: border-box;
+}
+.eco-smart .vector-1 {
+  width: 27px;
+  height: 18px;
+}
+.eco-smart .bilightning-fill-1 {
+  border-radius: 4px;
+  background: #0C0D36;
+  margin-bottom: 32px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-self: flex-start;
+  padding: 15px 10.5px;
+  width: 48px;
+  height: 48px;
+  box-sizing: border-box;
+}
+.eco-smart .headline-2 {
+  margin-bottom: 9px;
+  display: inline-block;
+  align-self: flex-start;
+  overflow-wrap: break-word;
+  font-family: 'Satoshi', 'Roboto Condensed';
+  font-weight: 500;
+  font-size: 32px;
+  color: #0C0D34;
+}
+.eco-smart .body-2 {
+  overflow-wrap: break-word;
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 18px;
+  color: #63638A;
+}
+.eco-smart .text-2 {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  box-sizing: border-box;
+}
+.eco-smart .benefit-1 {
+  border-radius: 8px;
+  background: #FAFAF6;
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  padding: 24px 39.5px 15px 24px;
+  width: fit-content;
+  box-sizing: border-box;
+}
+.eco-smart .vector-2 {
+  width: 19.2px;
+  height: 19.2px;
+}
+.eco-smart .bilightning-fill-2 {
+  border-radius: 4px;
+  background: #0C0D36;
+  margin-bottom: 32px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-self: flex-start;
+  padding: 14.4px;
+  width: 48px;
+  height: 48px;
+  box-sizing: border-box;
+}
+.eco-smart .headline-3 {
+  margin-bottom: 9px;
+  display: inline-block;
+  align-self: flex-start;
+  overflow-wrap: break-word;
+  font-family: 'Satoshi', 'Roboto Condensed';
+  font-weight: 500;
+  font-size: 32px;
+  color: #0C0D34;
+}
+.eco-smart .body-3 {
+  overflow-wrap: break-word;
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 18px;
+  color: #63638A;
+}
+.eco-smart .text-3 {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  width: fit-content;
+  box-sizing: border-box;
+}
+.eco-smart .benefit-2 {
+  border-radius: 8px;
+  background: #FAFAF6;
+  display: flex;
+  flex-direction: column;
+  padding: 24px 0 15px 24px;
+  width: fit-content;
+  box-sizing: border-box;
+}
+.eco-smart .benefits {
+  margin-right: 131px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+.eco-smart .label-play {
+  background-color: var(--button-color);
+  margin: 3.3px 21.4px 0 0;
+
+  display: inline-block;
+  overflow-wrap: break-word;
+  font-family: 'Satoshi', 'Roboto Condensed';
+  font-weight: 500;
+  font-size: 18px;
+  color: #F7F7F6;
+  border-radius: 4px;
+  border: none;
+  justify-content: center;
+}
+.eco-smart .v-play {
+  width: 16.5px;
+  height: 19.5px;
+}
+.eco-smart .phplay-fill {
+  margin-bottom: 4.7px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 16.5px;
+  height: 19.5px;
+  box-sizing: border-box;
+}
+.eco-smart .button-play {
+  background: #2E32D1;
+  display: flex;
+  flex-direction: row;
+  padding: 30.2px 0 25.5px 0;
+  width: 592px;
+  height: fit-content;
+  box-sizing: border-box;
+  justify-content: center;
+}
+.eco-smart .pic-1 {
+  border-radius: 16px;
+  background: url('./assets/pic.jpeg') 50% / cover no-repeat;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 740px;
+  width: 592px;
+  box-sizing: border-box;
+}
+
+/* Why Choose EcoSmart Solutions */
+
+
+/* Якщо розмір екрану перевищує 992 пікселів */
+@media screen and (min-width: 992px) {
+  .eco-smart .container-why {
+    display: flex;
+     flex-direction: row;
+     width: fit-content;
+    /* width: 555px; */
+    box-sizing: border-box;
+  
+    max-width: 1220px;
+    margin: 0 auto;
+    padding-left: 24px;
+    padding-right: 24px;
+      align-items: center;
+}
+}
+
+/* Якщо розмір екрану складає 992 пікселів в ширину або менше */
+@media screen and (max-width: 992px) {
+  .eco-smart .container-why {
+    display: flex;
+     flex-direction: column;
+     width: fit-content;
+    /* width: 555px; */
+    box-sizing: border-box;
+  
+    max-width: 1220px;
+    margin: 0 auto;
+    padding-left: 24px;
+    padding-right: 24px;
+      align-items: center;
+}
+}
+
+
+
+.eco-smart .container {
+  background: #F7F7F6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 80px;
+  box-sizing: border-box;
+}
+
+
+.eco-smart .why-we {
+  /* margin: 0 112px 124px 112px; */
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1220px;
+  width: fit-content;
+  box-sizing: border-box;
+}
+.eco-smart .title-1 {
+  margin-bottom: 59px;
+  display: inline-block;
+  overflow-wrap: break-word;
+  font-family: 'Satoshi', 'Roboto Condensed';
+  font-weight: 500;
+  font-size: 48px;
+  color: #0C0D34;
+}
+.eco-smart .pic-2 {
+  background: linear-gradient(rgba(46, 50, 209, 0.5), rgba(46, 50, 209, 0.5)), url('./assets/pic1.jpeg') 50% / cover no-repeat, linear-gradient(#E5E5E5, #E5E5E5);
+  margin-bottom: 28px;
+  width: 384px;
+  height: 192px;
+}
+.eco-smart .text-4 {
+  margin: 0 7.5px 18px 7.5px;
+  display: inline-block;
+  text-align: center;
+  overflow-wrap: break-word;
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.3;
+  color: #494949;
+}
+.eco-smart .author {
+  overflow-wrap: break-word;
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 16px;
+  color: #000000;
+}
+.eco-smart .testimonial {
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+.eco-smart .pic-3 {
+  background: linear-gradient(rgba(46, 50, 209, 0.5), rgba(46, 50, 209, 0.5)), url('./assets/pic4.jpeg') 50% / cover no-repeat, linear-gradient(#E5E5E5, #E5E5E5);
+  margin-bottom: 28px;
+  width: 384px;
+  height: 192px;
+}
+.eco-smart .text-5 {
+  margin: 0 18.3px 18px 18.3px;
+  display: inline-block;
+  text-align: center;
+  overflow-wrap: break-word;
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.3;
+  color: #494949;
+}
+.eco-smart .author-1 {
+  overflow-wrap: break-word;
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 16px;
+  color: #000000;
+}
+.eco-smart .testimonial-1 {
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+.eco-smart .pic-4 {
+  background: linear-gradient(rgba(46, 50, 209, 0.5), rgba(46, 50, 209, 0.5)), url('./assets/pic2.jpeg') 50% / cover no-repeat;
+  margin-bottom: 28px;
+  width: 384px;
+  height: 192px;
+}
+.eco-smart .text-6 {
+  margin: 0 5.3px 18px 5.3px;
+  display: inline-block;
+  text-align: center;
+  overflow-wrap: break-word;
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.3;
+  color: #494949;
+}
+.eco-smart .author-2 {
+  overflow-wrap: break-word;
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 16px;
+  color: #000000;
+}
+.eco-smart .testimonial-2 {
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+.eco-smart .testimonials {
+  display: flex;
+  flex-direction: row;
+  column-gap: 32px;
+  width: fit-content;
+  box-sizing: border-box;
+}
+.eco-smart .social-proof {
+  
+  /* margin: 0 112px 141px 112px; */
+  
+  margin: 124px 112px 124px 112px;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: fit-content;
+  box-sizing: border-box;
+}
+.eco-smart .start-your-journey-to-agreener-future-today {
+  margin-bottom: 5px;
+  display: inline-block;
+  text-align: center;
+  overflow-wrap: break-word;
+  font-family: 'Satoshi', 'Roboto Condensed';
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 1.3;
+  color: #0C0D34;
+}
+
+.eco-smart .cta {
+  border-radius: 8px;
+  background: #F7F7F6;
+  margin: 112px 112px 124px 112px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* padding: 112px 0; */
+  padding: 17px 32px;
+  width: 516px;
+  box-sizing: border-box;
+}
+.eco-smart .nav-item-1 {
+  margin: 0 0.4px 23px 0.4px;
+  display: inline-block;
+  align-self: flex-start;
+  overflow-wrap: break-word;
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 18px;
+  color: #DFDFDF;
+}
+.eco-smart .nav-item-2 {
+  margin-bottom: 23px;
+  display: inline-block;
+  align-self: flex-start;
+  overflow-wrap: break-word;
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 18px;
+  color: #DFDFDF;
+}
+
+.eco-smart .nav-item-3 {
+  overflow-wrap: break-word;
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 18px;
+  color: #DFDFDF;
+}
+.eco-smart .nav-items {
+  margin: 0 234.6px 22px 0;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+.eco-smart .copyright-statement-2023-eco-smart-solutions-all-rights-reserved {
+   margin: 248px 236px 0 0;
+  display: inline-block;
+  text-align: center;
+  overflow-wrap: break-word;
+  font-family: 'Inter';
+  font-weight: 400;
+  width: 350px;
+  font-size: 18px;
+  color: #DFDFDF;
+}
+
+
+.eco-smart .vector-4 {
+  width: 18px;
+  height: 18px;
+}
+.eco-smart .icon {
+  margin: 0 11px 6.5px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  box-sizing: border-box;
+}
+.eco-smart .nav-item-4 {
+  margin-top: 2.5px;
+  display: inline-block;
+  overflow-wrap: break-word;
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 18px;
+  color: #DFDFDF;
+}
+.eco-smart .phone-number {
+  margin: 0 1px 32.5px 1px;
+  display: flex;
+  flex-direction: row;
+  align-self: flex-start;
+  width: fit-content;
+  box-sizing: border-box;
+}
+.eco-smart .vector-5 {
+  width: 20px;
+  height: 16px;
+}
+.eco-smart .icon-1 {
+  margin: 0 10px 7.5px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 20px;
+  height: 16px;
+  box-sizing: border-box;
+}
+.eco-smart .nav-item-5 {
+  margin-top: 1.5px;
+  display: inline-block;
+  overflow-wrap: break-word;
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 18px;
+  color: #DFDFDF;
+}
+.eco-smart .email {
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: row;
+  align-self: flex-start;
+  width: fit-content;
+  box-sizing: border-box;
+}
+.eco-smart .vector-6 {
+  width: 16.5px;
+  height: 21px;
+}
+.eco-smart .icon-2 {
+  margin: 0 11.8px 5px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 16.5px;
+  height: 21px;
+  box-sizing: border-box;
+}
+.eco-smart .nav-item-6 {
+  margin-top: 4px;
+  display: inline-block;
+  overflow-wrap: break-word;
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 18px;
+  color: #DFDFDF;
+}
+.eco-smart .address {
+  margin-left: 1.8px;
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+  box-sizing: border-box;
+}
+.eco-smart .info {
+  margin: 150px 0px 27.5px 0;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+.eco-smart .footer {
+  background: #000000;
+  display: flex;
+  flex-direction: row;
+  padding: 116px 112.3px 85px 112px;
+  width: fit-content;
+  box-sizing: border-box;
+}
+
+/* Якщо розмір екрану перевищує 992 пікселів */
+@media screen and (min-width: 992px) {
+  .eco-smart .footer {
+    background: #000000;
+    display: flex;
+    flex-direction: row;
+    padding: 116px 112.3px 85px 112px;
+    width: fit-content;
+    box-sizing: border-box;
+  }
+}
+
+/* Якщо розмір екрану складає 992 пікселів в ширину або менше */
+@media screen and (max-width: 992px) {
+  .eco-smart .footer {
+    background: #000000;
+    display: flex;
+    flex-direction: column;
+    padding: 116px 112.3px 85px 112px;
+    width: fit-content;
+    box-sizing: border-box;
+  }
+}
